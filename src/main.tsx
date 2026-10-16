@@ -3,8 +3,11 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
 import { PrimeReactProvider } from 'primereact/api'
 
+const basepath = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 const router = createRouter({
   routeTree,
+  basepath: basepath || undefined,
 })
 
 declare module '@tanstack/react-router' {
