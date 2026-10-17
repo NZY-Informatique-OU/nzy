@@ -74,10 +74,10 @@ const fr = {
   },
   about: {
     title: 'À propos de nous',
-    lead: "Une société estonienne au service de projets informatiques dans toute l'Europe.",
+    lead: "Une société estonienne au service de projets informatiques en Europe et sur le continent américain.",
     whoTitle: 'Qui sommes-nous',
     whoP1:
-      " est une société de conseil et de développement informatique immatriculée en Estonie (OÜ, équivalent estonien de la forme Ltd./SARL). Depuis Tallinn, nous intervenons pour des clients dans l'ensemble de l'Europe, en conseil comme en réalisation.",
+      " est une société de conseil et de développement informatique immatriculée en Estonie (OÜ, équivalent estonien de la forme Ltd./SARL). Depuis Tallinn, nous intervenons pour des clients en Europe et sur le continent américain, en conseil comme en réalisation.",
     whoP2:
       "Nos activités couvrent deux pôles complémentaires : le conseil et l'assistance à maîtrise d'ouvrage auprès des porteurs de projets, et le développement clés en main d'applications web, de solutions d'intelligence artificielle et d'infrastructures cloud.",
     legalTitle: 'Informations légales',
@@ -88,7 +88,7 @@ const fr = {
     legalAddress: 'Adresse',
     legalAddressCity: '10114 Tallinn, Estonie',
     legalArea: "Zone d'activité",
-    legalAreaValue: 'Europe entière',
+    legalAreaValue: 'Union européenne, Royaume-Uni, Amérique du Nord et du Sud',
     legalContact: 'Contact',
     consultingTitle: 'Conseil aux entreprises',
     consultingA: 'Sous sa marque ',
@@ -96,7 +96,7 @@ const fr = {
       ", la société accompagne les gestionnaires de projets métier : analyse des besoins assistée par l'intelligence artificielle, cadrage fonctionnel et technique, rédaction de cahiers des charges, choix d'architecture et suivi de la réalisation. Notre rôle : sécuriser vos décisions et préparer un développement clés en main, que nous pouvons ensuite assurer nous-mêmes.",
   },
   footer: {
-    tagline: 'Conseil & développement informatique — Europe',
+    tagline: 'Conseil & développement informatique — Europe & Amériques',
     credits:
       'Photos : « Vanalinn, vue de Patkuli » par Ivar Leidus (CC BY-SA 3.0 EE) · « Mont-Blanc depuis le Salève » par Claudec (CC BY-SA 3.0) · « Parlement hongrois, Budapest » par Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
   },
@@ -167,10 +167,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'About us',
-      lead: 'An Estonian company serving IT projects across Europe.',
+      lead: 'An Estonian company serving IT projects across Europe and the Americas.',
       whoTitle: 'Who we are',
       whoP1:
-        ' is an IT consulting and development company registered in Estonia (OÜ, the Estonian equivalent of Ltd.). From Tallinn, we serve clients across Europe, in both consulting and delivery.',
+        ' is an IT consulting and development company registered in Estonia (OÜ, the Estonian equivalent of Ltd.). From Tallinn, we serve clients across Europe and the Americas, in both consulting and delivery.',
       whoP2:
         'Our activities cover two complementary areas: consulting and product-ownership assistance for project owners, and turnkey development of web applications, artificial-intelligence solutions and cloud infrastructures.',
       legalTitle: 'Legal information',
@@ -180,8 +180,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Registration number',
       legalAddress: 'Address',
       legalAddressCity: '10114 Tallinn, Estonia',
-      legalArea: 'Area of activity',
-      legalAreaValue: 'All of Europe',
+      legalArea: 'Geographic coverage',
+      legalAreaValue: 'European Union, United Kingdom, North and South America',
       legalContact: 'Contact',
       consultingTitle: 'Business consulting',
       consultingA: 'Under its ',
@@ -189,7 +189,7 @@ export const messages: Record<Lang, Messages> = {
         ' brand, the company supports business project managers: AI-assisted requirements analysis, functional and technical scoping, specification writing, architecture choices and delivery oversight. Our role: secure your decisions and prepare turnkey development, which we can then carry out ourselves.',
     },
     footer: {
-      tagline: 'IT consulting & development — Europe',
+      tagline: 'IT consulting & development — Europe & the Americas',
       credits:
         'Photos: "Tallinn old town from Patkuli" by Ivar Leidus (CC BY-SA 3.0 EE) · "Mont Blanc from Salève" by Claudec (CC BY-SA 3.0) · "Hungarian Parliament, Budapest" by Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -256,10 +256,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'Meist',
-      lead: 'Eesti ettevõte, mis teenindab infotehnoloogia projekte kogu Euroopas.',
+      lead: 'Eesti ettevõte, mis teenindab infotehnoloogia projekte kogu Euroopas ja mõlemal Ameerika kontinendil.',
       whoTitle: 'Kes me oleme',
       whoP1:
-        ' on Eestis registreeritud infotehnoloogia nõustamis- ja arendusettevõte (OÜ — eraõiguslik piiratud vastutusega ühing). Tallinnast teenindame kliente kogu Euroopas nii nõustamise kui ka realiseerimise vallas.',
+        ' on Eestis registreeritud infotehnoloogia nõustamis- ja arendusettevõte (OÜ — eraõiguslik piiratud vastutusega ühing). Tallinnast teenindame kliente kogu Euroopas ja mõlemal Ameerika kontinendil nii nõustamise kui ka realiseerimise vallas.',
       whoP2:
         'Meie tegevus hõlmab kahte täiendavat valdkonda: nõustamine ja tellija-abistamine projektide omanikele ning veebirakenduste, tehisintellekti lahenduste ja pilveinfrastruktuuride võtmed-kätte-arendus.',
       legalTitle: 'Juriidiline teave',
@@ -270,7 +270,7 @@ export const messages: Record<Lang, Messages> = {
       legalAddress: 'Aadress',
       legalAddressCity: '10114 Tallinn, Eesti',
       legalArea: 'Tegevuspiirkond',
-      legalAreaValue: 'Kogu Euroopa',
+      legalAreaValue: 'Euroopa Liit, Ühendkuningriik, Põhja- ja Lõuna-Ameerika',
       legalContact: 'Kontakt',
       consultingTitle: 'Nõustamine ettevõtetele',
       consultingA: 'Oma kaubamärgi ',
@@ -278,7 +278,7 @@ export const messages: Record<Lang, Messages> = {
         ' all toetab ettevõte äriprojektide juhte: tehisintellekti-toetatud vajaduste analüüs, funktsionaalne ja tehniline raamistus, lähteülesannete koostamine, arhitektuurivalikud ja teostuse järelvalve. Meie roll: tagada teie otsuste kindlus ja valmistada ette võtmed-kätte-arendus, mille saame seejärel ka ise teostada.',
     },
     footer: {
-      tagline: 'IT-nõustamine ja -arendus — Euroopa',
+      tagline: 'IT-nõustamine ja -arendus — Euroopa ja Ameerikad',
       credits:
         'Fotod: Ivar Leiduse "Vanalinn Patkuli platvormilt" (CC BY-SA 3.0 EE) · Claudec\'i "Mont Blanc Salève\'ilt" (CC BY-SA 3.0) · Godot13 "Ungari parlement, Budapest" (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -345,10 +345,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'Quiénes somos',
-      lead: 'Una empresa estonia al servicio de los proyectos informáticos en toda Europa.',
+      lead: 'Una empresa estonia al servicio de los proyectos informáticos en toda Europa y las Américas.',
       whoTitle: 'Quiénes somos',
       whoP1:
-        ' es una empresa de consultoría y desarrollo informático registrada en Estonia (OÜ, equivalente estonio de la forma Ltd.). Desde Tallin, intervenimos para clientes en toda Europa, tanto en consultoría como en realización.',
+        ' es una empresa de consultoría y desarrollo informático registrada en Estonia (OÜ, equivalente estonio de la forma Ltd.). Desde Tallin, intervenimos para clientes en toda Europa y las Américas, tanto en consultoría como en realización.',
       whoP2:
         'Nuestras actividades abarcan dos ámbitos complementarios: la consultoría y la asistencia a la dirección de proyecto junto a los propietarios de proyectos, y el desarrollo llave en mano de aplicaciones web, soluciones de inteligencia artificial e infraestructuras cloud.',
       legalTitle: 'Información legal',
@@ -358,8 +358,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Número de registro',
       legalAddress: 'Dirección',
       legalAddressCity: '10114 Tallin, Estonia',
-      legalArea: 'Ámbito de actividad',
-      legalAreaValue: 'Toda Europa',
+      legalArea: 'Cobertura geográfica',
+      legalAreaValue: 'Unión Europea, Reino Unido, América del Norte y del Sur',
       legalContact: 'Contacto',
       consultingTitle: 'Consultoría para empresas',
       consultingA: 'Bajo su marca ',
@@ -367,7 +367,7 @@ export const messages: Record<Lang, Messages> = {
         ', la empresa acompaña a los gestores de proyectos de negocio: análisis de necesidades asistido por inteligencia artificial, definición funcional y técnica, redacción de pliegos de condiciones, elección de arquitecturas y seguimiento de la realización. Nuestra función: asegurar sus decisiones y preparar un desarrollo llave en mano, que después podemos realizar nosotros mismos.',
     },
     footer: {
-      tagline: 'Consultoría y desarrollo informático — Europa',
+      tagline: 'Consultoría y desarrollo informático — Europa y las Américas',
       credits:
         'Fotos: «Ciudad vieja de Tallin desde Patkuli» de Ivar Leidus (CC BY-SA 3.0 EE) · «Mont Blanc desde el Salève» de Claudec (CC BY-SA 3.0) · «Parlamento húngaro, Budapest» de Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -434,10 +434,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'Sobre nós',
-      lead: 'Uma empresa estónia ao serviço dos projetos informáticos em toda a Europa.',
+      lead: 'Uma empresa estónia ao serviço dos projetos informáticos em toda a Europa e nas Américas.',
       whoTitle: 'Quem somos',
       whoP1:
-        ' é uma empresa de consultoria e desenvolvimento informático registada na Estónia (OÜ, equivalente estónio da forma Ltd.). A partir de Talim, intervimos para clientes em toda a Europa, tanto em consultoria como em realização.',
+        ' é uma empresa de consultoria e desenvolvimento informático registada na Estónia (OÜ, equivalente estónio da forma Ltd.). A partir de Talim, intervimos para clientes em toda a Europa e nas Américas, tanto em consultoria como em realização.',
       whoP2:
         'As nossas atividades abrangem dois domínios complementares: a consultoria e a assistência à direção de projeto junto dos donos de projetos, e o desenvolvimento chave na mão de aplicações web, soluções de inteligência artificial e infraestruturas cloud.',
       legalTitle: 'Informações legais',
@@ -447,8 +447,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Número de registo',
       legalAddress: 'Morada',
       legalAddressCity: '10114 Talim, Estónia',
-      legalArea: 'Âmbito de atividade',
-      legalAreaValue: 'Toda a Europa',
+      legalArea: 'Cobertura geográfica',
+      legalAreaValue: 'União Europeia, Reino Unido, América do Norte e do Sul',
       legalContact: 'Contacto',
       consultingTitle: 'Consultoria para empresas',
       consultingA: 'Sob a sua marca ',
@@ -456,7 +456,7 @@ export const messages: Record<Lang, Messages> = {
         ', a empresa acompanha os gestores de projetos de negócio: análise das necessidades assistida por inteligência artificial, enquadramento funcional e técnico, redação de cadernos de encargos, escolha de arquiteturas e acompanhamento da realização. O nosso papel: garantir as suas decisões e preparar um desenvolvimento chave na mão, que podemos depois assegurar nós próprios.',
     },
     footer: {
-      tagline: 'Consultoria e desenvolvimento informático — Europa',
+      tagline: 'Consultoria e desenvolvimento informático — Europa e as Américas',
       credits:
         'Fotos: «Cidade velha de Talim a partir de Patkuli» de Ivar Leidus (CC BY-SA 3.0 EE) · «Monte Branco a partir do Salève» de Claudec (CC BY-SA 3.0) · «Parlamento húngaro, Budapeste» de Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -523,10 +523,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'Про нас',
-      lead: 'Естонська компанія, що обслуговує ІТ-проєкти в усій Європі.',
+      lead: 'Естонська компанія, що обслуговує ІТ-проєкти в усій Європі та обох Америках.',
       whoTitle: 'Хто ми',
       whoP1:
-        ' — це компанія з ІТ-консалтингу та розробки, зареєстрована в Естонії (OÜ — естонський аналог форми Ltd.). З Таллінна ми працюємо з клієнтами по всій Європі — і в консалтингу, і в реалізації.',
+        ' — це компанія з ІТ-консалтингу та розробки, зареєстрована в Естонії (OÜ — естонський аналог форми Ltd.). З Таллінна ми працюємо з клієнтами по всій Європі та обох Америках — і в консалтингу, і в реалізації.',
       whoP2:
         'Наша діяльність охоплює два взаємодоповнювані напрямки: консалтинг та супровід замовника для власників проєктів, а також розробку «під ключ» веб-застосунків, рішень штучного інтелекту та хмарних інфраструктур.',
       legalTitle: 'Юридична інформація',
@@ -536,8 +536,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Реєстраційний номер',
       legalAddress: 'Адреса',
       legalAddressCity: '10114 Таллінн, Естонія',
-      legalArea: 'Сфера діяльності',
-      legalAreaValue: 'Вся Європа',
+      legalArea: 'Географічне покриття',
+      legalAreaValue: 'Європейський Союз, Велика Британія, Північна та Південна Америка',
       legalContact: 'Контакт',
       consultingTitle: 'Консалтинг для бізнесу',
       consultingA: 'Під брендом ',
@@ -545,7 +545,7 @@ export const messages: Record<Lang, Messages> = {
         ' компанія супроводжує керівників бізнес-проєктів: підтриманий штучним інтелектом аналіз потреб, функціональне та технічне обрамлення, написання технічних завдань, вибір архітектури та контроль реалізації. Наша роль: забезпечити впевненість у ваших рішеннях і підготувати розробку «під ключ», яку ми можемо потім виконати самостійно.',
     },
     footer: {
-      tagline: 'ІТ-консалтинг та розробка — Європа',
+      tagline: 'ІТ-консалтинг та розробка — Європа й Америки',
       credits:
         'Фото: «Старе місто Таллінна з майданчика Паткулі», Івар Лейдус (CC BY-SA 3.0 EE) · «Монблан із Салеву», Claudec (CC BY-SA 3.0) · «Угорський парламент, Будапешт», Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -612,10 +612,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'О нас',
-      lead: 'Эстонская компания, обслуживающая ИТ-проекты по всей Европе.',
+      lead: 'Эстонская компания, обслуживающая ИТ-проекты по всей Европе и обеим Америкам.',
       whoTitle: 'Кто мы',
       whoP1:
-        ' — компания по ИТ-консалтингу и разработке, зарегистрированная в Эстонии (OÜ — эстонский аналог формы Ltd.). Из Таллинна мы работаем с клиентами по всей Европе — и в консалтинге, и в реализации.',
+        ' — компания по ИТ-консалтингу и разработке, зарегистрированная в Эстонии (OÜ — эстонский аналог формы Ltd.). Из Таллинна мы работаем с клиентами по всей Европе и обеим Америкам — и в консалтинге, и в реализации.',
       whoP2:
         'Наша деятельность охватывает два взаимодополняющих направления: консалтинг и поддержку заказчика для владельцев проектов, а также разработку «под ключ» веб-приложений, решений искусственного интеллекта и облачных инфраструктур.',
       legalTitle: 'Юридическая информация',
@@ -625,8 +625,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Регистрационный номер',
       legalAddress: 'Адрес',
       legalAddressCity: '10114 Таллинн, Эстония',
-      legalArea: 'Сфера деятельности',
-      legalAreaValue: 'Вся Европа',
+      legalArea: 'Географический охват',
+      legalAreaValue: 'Европейский союз, Великобритания, Северная и Южная Америка',
       legalContact: 'Контакт',
       consultingTitle: 'Консалтинг для бизнеса',
       consultingA: 'Под брендом ',
@@ -634,7 +634,7 @@ export const messages: Record<Lang, Messages> = {
         ' компания сопровождает руководителей бизнес-проектов: поддерживаемый искусственным интеллектом анализ потребностей, функциональное и техническое обрамление, написание технических заданий, выбор архитектуры и контроль реализации. Наша роль: обеспечить уверенность в ваших решениях и подготовить разработку «под ключ», которую мы можем затем выполнить самостоятельно.',
     },
     footer: {
-      tagline: 'ИТ-консалтинг и разработка — Европа',
+      tagline: 'ИТ-консалтинг и разработка — Европа и Америки',
       credits:
         'Фото: «Старый город Таллинна с площадки Паткули», Ивар Лейдус (CC BY-SA 3.0 EE) · «Монблан с Салева», Claudec (CC BY-SA 3.0) · «Венгерский парламент, Будапешт», Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
     },
@@ -701,10 +701,10 @@ export const messages: Record<Lang, Messages> = {
     },
     about: {
       title: 'Rólunk',
-      lead: 'Egy észt vállalat, amely informatikai projekteket szolgál ki egész Európában.',
+      lead: 'Egy észt vállalat, amely informatikai projekteket szolgál ki egész Európában és mindkét amerikai kontinensen.',
       whoTitle: 'Kik vagyunk',
       whoP1:
-        ' egy Észtországban bejegyzett IT-tanácsadó és -fejlesztő vállalat (OÜ — a Kft. észt megfelelője). Tallinnból egész Európában szolgálunk ki ügyfeleket, tanácsadásban és megvalósításban egyaránt.',
+        ' egy Észtországban bejegyzett IT-tanácsadó és -fejlesztő vállalat (OÜ — a Kft. észt megfelelője). Tallinnból egész Európában és mindkét amerikai kontinensen szolgálunk ki ügyfeleket, tanácsadásban és megvalósításban egyaránt.',
       whoP2:
         'Tevékenységünk két kiegészítő területet ölel fel: tanácsadást és megrendelői oldali támogatást a projekttulajdonosok számára, valamint webalkalmazások, mesterségesintelligencia-megoldások és felhőinfrastruktúrák kulcsrakész fejlesztését.',
       legalTitle: 'Jogi információk',
@@ -714,8 +714,8 @@ export const messages: Record<Lang, Messages> = {
       legalReg: 'Nyilvántartási szám',
       legalAddress: 'Cím',
       legalAddressCity: '10114 Tallinn, Észtország',
-      legalArea: 'Működési terület',
-      legalAreaValue: 'Egész Európa',
+      legalArea: 'Földrajzi lefedettség',
+      legalAreaValue: 'Európai Unió, Egyesült Királyság, Észak- és Dél-Amerika',
       legalContact: 'Kapcsolat',
       consultingTitle: 'Vállalati tanácsadás',
       consultingA: 'A ',
@@ -723,7 +723,7 @@ export const messages: Record<Lang, Messages> = {
         ' márkanév alatt a vállalat az üzleti projektmenedzsereket támogatja: mesterséges intelligenciával támogatott igényelemzés, funkcionális és technikai keretezés, műszaki specifikációk készítése, architektúra-választás és a megvalósítás felügyelete. Szerepünk: biztosítani döntései megalapozottságát és előkészíteni a kulcsrakész fejlesztést, amelyet ezután mi magunk is elvégezhetünk.',
     },
     footer: {
-      tagline: 'IT-tanácsadás és -fejlesztés — Európa',
+      tagline: 'IT-tanácsadás és -fejlesztés — Európa és Amerikák',
       credits:
         'Fotók: Ivar Leidus „Tallinni óváros a Patkuli kilátóból” (CC BY-SA 3.0 EE) · Claudec „Mont Blanc a Salève-ről” (CC BY-SA 3.0) · Godot13 „Magyar parlament, Budapest” (CC BY-SA 4.0) — Wikimedia Commons',
     },

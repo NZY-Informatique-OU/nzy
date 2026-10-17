@@ -26,7 +26,7 @@ describe('SiteFooter', () => {
             </LanguageProvider>
         )
 
-        expect(screen.getByText(/IT consulting & development — Europe/)).toBeInTheDocument()
+        expect(screen.getByText(/IT consulting & development — Europe & the Americas/)).toBeInTheDocument()
     })
 })
 
