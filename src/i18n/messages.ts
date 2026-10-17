@@ -21,7 +21,7 @@ const fr = {
   },
   hero: {
     subtitle:
-      "Conseil développement informatique. NZY Informatique OÜ (Ltd./SARL) — Société européenne basée en Estonie",
+      "Conseil et développement informatique. NZY Informatique OÜ (Ltd./SARL) — Société européenne basée en Estonie",
     cta: 'Découvrir notre expertise',
   },
   home: {
