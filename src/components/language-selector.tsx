@@ -10,6 +10,9 @@ import flagBr from '../../assets/images/flags/br.svg'
 import flagUa from '../../assets/images/flags/ua.svg'
 import flagRu from '../../assets/images/flags/ru.svg'
 import flagHu from '../../assets/images/flags/hu.svg'
+import flagIl from '../../assets/images/flags/il.svg'
+import flagAr from '../../assets/images/flags/ar.svg'
+import flagCn from '../../assets/images/flags/cn.svg'
 
 const langFlags: Record<Lang, string> = {
   fr: flagFr,
@@ -20,6 +23,9 @@ const langFlags: Record<Lang, string> = {
   uk: flagUa,
   ru: flagRu,
   hu: flagHu,
+  he: flagIl,
+  ar: flagAr,
+  zh: flagCn,
 }
 
 interface LangOption {

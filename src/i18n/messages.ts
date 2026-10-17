@@ -1,5 +1,11 @@
-export const languages = ['fr', 'en', 'et', 'es', 'pt', 'uk', 'ru', 'hu'] as const
+export const languages = ['fr', 'en', 'et', 'es', 'pt', 'uk', 'ru', 'hu', 'he', 'ar', 'zh'] as const
 export type Lang = (typeof languages)[number]
+
+export const rtlLanguages: readonly Lang[] = ['he', 'ar']
+
+export function isRtl(lang: Lang): boolean {
+  return rtlLanguages.includes(lang)
+}
 
 export const langNames: Record<Lang, string> = {
   fr: 'Français',
@@ -10,6 +16,9 @@ export const langNames: Record<Lang, string> = {
   uk: 'Українська',
   ru: 'Русский',
   hu: 'Magyar',
+  he: 'עברית',
+  ar: 'العربية',
+  zh: '中文（简体）',
 }
 
 const fr = {
@@ -28,7 +37,7 @@ const fr = {
   home: {
     introTitle: "Vos projets web ambitieux, pilotés par l'intelligence artificielle",
     introP1:
-      "NZY Informatique OÜ accompagne les entreprises européennes dans la conception et la réalisation d'applications web avancées. Notre démarche s'appuie sur une analyse de projet augmentée par l'intelligence artificielle : nous exploitons les modèles les plus récents pour cartographier vos besoins, challenger les scénarios d'usage, détecter les risques d'architecture et produire des spécifications d'une précision inédite — avant même la première ligne de code.",
+      "NZY Informatique OÜ accompagne les entreprises d'Europe et des Amériques dans la conception et la réalisation d'applications web avancées. Notre démarche s'appuie sur une analyse de projet augmentée par l'intelligence artificielle : nous exploitons les modèles les plus récents pour cartographier vos besoins, challenger les scénarios d'usage, détecter les risques d'architecture et produire des spécifications d'une précision inédite — avant même la première ligne de code.",
     introP2a: 'Nous assumons le ',
     introP2Strong: 'cycle complet de votre projet',
     introP2b:
@@ -122,7 +131,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Your ambitious web projects, driven by artificial intelligence',
       introP1:
-        'NZY Informatique OÜ supports European companies in the design and delivery of advanced web applications. Our approach relies on AI-augmented project analysis: we leverage the latest models to map your needs, challenge usage scenarios, detect architecture risks and produce specifications of unprecedented precision — before the first line of code is even written.',
+        'NZY Informatique OÜ supports companies across Europe and the Americas in the design and delivery of advanced web applications. Our approach relies on AI-augmented project analysis: we leverage the latest models to map your needs, challenge usage scenarios, detect architecture risks and produce specifications of unprecedented precision — before the first line of code is even written.',
       introP2a: 'We handle the ',
       introP2Strong: 'full lifecycle of your project',
       introP2b:
@@ -210,7 +219,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Teie ambitsioonikad veebiprojektid, mida juhib tehisintellekt',
       introP1:
-        'NZY Informatique OÜ aitab Euroopa ettevõtetel kavandada ja realiseerida keerukaid veebirakendusi. Meie lähenemine tugineb tehisintellektiga rikastatud projektianalüüsile: kasutame uusimaid mudeleid, et kaardistada teie vajadusi, vaidlustada kasutusstsenaariume, tuvastada arhitektuuririske ja koostada enneolematu täpsusega spetsifikatsioone — juba enne esimest koodirida.',
+        'NZY Informatique OÜ aitab Euroopa ja Ameerika ettevõtetel kavandada ja realiseerida keerukaid veebirakendusi. Meie lähenemine tugineb tehisintellektiga rikastatud projektianalüüsile: kasutame uusimaid mudeleid, et kaardistada teie vajadusi, vaidlustada kasutusstsenaariume, tuvastada arhitektuuririske ja koostada enneolematu täpsusega spetsifikatsioone — juba enne esimest koodirida.',
       introP2a: 'Võtame enda peale teie ',
       introP2Strong: 'projekti täieliku tsükli',
       introP2b:
@@ -299,7 +308,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Sus proyectos web ambiciosos, impulsados por la inteligencia artificial',
       introP1:
-        'NZY Informatique OÜ acompaña a las empresas europeas en el diseño y la realización de aplicaciones web avanzadas. Nuestro enfoque se basa en un análisis de proyectos aumentado por la inteligencia artificial: aprovechamos los modelos más recientes para cartografiar sus necesidades, cuestionar los escenarios de uso, detectar los riesgos de arquitectura y producir especificaciones de una precisión inédita, incluso antes de la primera línea de código.',
+        'NZY Informatique OÜ acompaña a las empresas de Europa y las Américas en el diseño y la realización de aplicaciones web avanzadas. Nuestro enfoque se basa en un análisis de proyectos aumentado por la inteligencia artificial: aprovechamos los modelos más recientes para cartografiar sus necesidades, cuestionar los escenarios de uso, detectar los riesgos de arquitectura y producir especificaciones de una precisión inédita, incluso antes de la primera línea de código.',
       introP2a: 'Asumimos el ',
       introP2Strong: 'ciclo completo de su proyecto',
       introP2b:
@@ -388,7 +397,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Os seus projetos web ambiciosos, impulsionados pela inteligência artificial',
       introP1:
-        'A NZY Informatique OÜ acompanha as empresas europeias na conceção e realização de aplicações web avançadas. A nossa abordagem assenta numa análise de projeto aumentada pela inteligência artificial: utilizamos os modelos mais recentes para mapear as suas necessidades, questionar os cenários de utilização, detetar riscos de arquitetura e produzir especificações de uma precisão sem precedentes — antes mesmo da primeira linha de código.',
+        'A NZY Informatique OÜ acompanha as empresas da Europa e das Américas na conceção e realização de aplicações web avançadas. A nossa abordagem assenta numa análise de projeto aumentada pela inteligência artificial: utilizamos os modelos mais recentes para mapear as suas necessidades, questionar os cenários de utilização, detetar riscos de arquitetura e produzir especificações de uma precisão sem precedentes — antes mesmo da primeira linha de código.',
       introP2a: 'Asseguramos o ',
       introP2Strong: 'ciclo completo do seu projeto',
       introP2b:
@@ -477,7 +486,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Ваші амбітні веб-проєкти, керовані штучним інтелектом',
       introP1:
-        'NZY Informatique OÜ супроводжує європейські компанії у проєктуванні та реалізації складних веб-застосунків. Наш підхід ґрунтується на аналізі проєктів, посиленому штучним інтелектом: ми використовуємо найновіші моделі, щоб змоделювати ваші потреби, перевірити сценарії використання, виявити архітектурні ризики та створити специфікації небаченої точності — ще до першого рядка коду.',
+        'NZY Informatique OÜ супроводжує компанії Європи та обох Америк у проєктуванні та реалізації складних веб-застосунків. Наш підхід ґрунтується на аналізі проєктів, посиленому штучним інтелектом: ми використовуємо найновіші моделі, щоб змоделювати ваші потреби, перевірити сценарії використання, виявити архітектурні ризики та створити специфікації небаченої точності — ще до першого рядка коду.',
       introP2a: 'Ми забезпечуємо ',
       introP2Strong: 'повний цикл вашого проєкту',
       introP2b:
@@ -566,7 +575,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Ваши амбициозные веб-проекты, управляемые искусственным интеллектом',
       introP1:
-        'NZY Informatique OÜ сопровождает европейские компании в проектировании и реализации сложных веб-приложений. Наш подход опирается на усиленный искусственным интеллектом анализ проектов: мы используем новейшие модели, чтобы картировать ваши потребности, проверять сценарии использования, выявлять архитектурные риски и создавать спецификации беспрецедентной точности — ещё до первой строки кода.',
+        'NZY Informatique OÜ сопровождает компании Европы и обеих Америк в проектировании и реализации сложных веб-приложений. Наш подход опирается на усиленный искусственным интеллектом анализ проектов: мы используем новейшие модели, чтобы картировать ваши потребности, проверять сценарии использования, выявлять архитектурные риски и создавать спецификации беспрецедентной точности — ещё до первой строки кода.',
       introP2a: 'Мы берём на себя ',
       introP2Strong: 'полный цикл вашего проекта',
       introP2b:
@@ -655,7 +664,7 @@ export const messages: Record<Lang, Messages> = {
     home: {
       introTitle: 'Ambiciózus webes projektjei, mesterséges intelligenciával vezérelve',
       introP1:
-        'A NZY Informatique OÜ európai vállalatokat támogat a fejlett webalkalmazások megtervezésében és megvalósításában. Megközelítésünk a mesterséges intelligenciával kibővített projektelemzésen alapul: a legújabb modelleket használjuk az Ön igényeinek feltérképezésére, a felhasználási forgatókönyvek megvizsgálására, az architektúra-kockázatok azonosítására és példátlan pontosságú specifikációk készítésére — még az első kódsor megírása előtt.',
+        'A NZY Informatique OÜ európai és amerikai vállalatokat támogat a fejlett webalkalmazások megtervezésében és megvalósításában. Megközelítésünk a mesterséges intelligenciával kibővített projektelemzésen alapul: a legújabb modelleket használjuk az Ön igényeinek feltérképezésére, a felhasználási forgatókönyvek megvizsgálására, az architektúra-kockázatok azonosítására és példátlan pontosságú specifikációk készítésére — még az első kódsor megírása előtt.',
       introP2a: 'Vállaljuk ',
       introP2Strong: 'projektje teljes életciklusát',
       introP2b:
@@ -726,6 +735,271 @@ export const messages: Record<Lang, Messages> = {
       tagline: 'IT-tanácsadás és -fejlesztés — Európa és Amerikák',
       credits:
         'Fotók: Ivar Leidus „Tallinni óváros a Patkuli kilátóból” (CC BY-SA 3.0 EE) · Claudec „Mont Blanc a Salève-ről” (CC BY-SA 3.0) · Godot13 „Magyar parlament, Budapest” (CC BY-SA 4.0) — Wikimedia Commons',
+    },
+  },
+  he: {
+    metaTitle: 'NZY Informatique OÜ — ייעוץ ופיתוח IT',
+    selectLanguage: 'בחירת שפה',
+    nav: {
+      home: 'דף הבית',
+      expertise: 'המומחיות שלנו',
+      about: 'עלינו',
+    },
+    hero: {
+      subtitle:
+        'ייעוץ ופיתוח בתחום המחשוב. NZY Informatique OÜ (בע"מ) — חברה אירופית שבסיסה באסטוניה',
+      cta: 'גלו את המומחיות שלנו',
+    },
+    home: {
+      introTitle: 'פרויקטי ה-Web השאפתניים שלכם, מונעים בינה מלאכותית',
+      introP1:
+        'NZY Informatique OÜ מלווה חברות באירופה ובאמריקה בתכנון וביישום של יישומי Web מתקדמים. הגישה שלנו מבוססת על ניתוח פרויקטים מוגבר בינה מלאכותית: אנו מפעילים את המודלים העדכניים כדי למפות את צרכיכם, לאתגר תרחישי שימוש, לזהות סיכוני ארכיטקטורה ולהפיק מפרטים בדיוק חסר תקדים — עוד לפני שורת הקוד הראשונה.',
+      introP2a: 'אנו לוקחים על עצמנו את ',
+      introP2Strong: 'מחזור החיים המלא של הפרויקט',
+      introP2b:
+        ': מהמחקר הראשוני והייעוץ למנהלי פרויקטים עסקיים ועד לפיתוח "מפתח ביד". מסגור פונקציונלי, סיוע בהזמנה, ארכיטקטורה, פיתוח, בדיקות, פריסה בענן והעברת ידע: גורם קשר יחיד, חזון מקצה לקצה.',
+      consultingTitle: 'מחקר וייעוץ',
+      consultingText:
+        'ניתוח מסייע בינה מלאכותית של פרויקטי היישומים שלכם, מסגור פונקציונלי וליווי צוותי ההזמנה שלכם, מניסוח הצורך ועד תיק המפרטים.',
+      devTitle: 'פיתוח "מפתח ביד"',
+      devText:
+        'תכנון ויישום מלאים של יישומי Web מודרניים: ארכיטקטורה, פיתוח, בדיקות, מסירה והעלאה לייצור — מוכנים לשימוש.',
+      cloudTitle: 'פתרונות AI וענן',
+      cloudText:
+        'סוכנים חכמים, יישומים המשלבים AI ותשתיות ענן המתוארות כקוד, המופעלות על הפלטפורמה המתאימה ביותר להקשר שלכם.',
+      contactTitle: 'בואו נדבר על הפרויקט שלכם',
+      contactText: 'יש רעיון, מסמך אפיון, יישום למודרניזציה? כתבו לנו.',
+    },
+    expertise: {
+      title: 'המומחיות שלנו',
+      lead: 'הנדסת תוכנה מודרנית שבה בינה מלאכותית מעורבת בכל שלב — והיא גם עצם תוכנן של הפתרונות שאנו בונים.',
+      aiPanelTitle: 'AI בכל מחזור הפיתוח שלנו',
+      aiPanelText:
+        'בינה מלאכותית אינה אצלנו טרנד חולף: היא כלי הנדסי המשולב בכל שרשרת הייצור שלנו. היא מאיצה את ניתוח הצרכים, מסייעת לחקור ארכיטקטורות אפשריות, משתתפת ביצירה ובסקירה של קוד, מחזקת את כיסוי הבדיקות ומייעלת את כתיבת התיעוד. כל תוצר עדיין מאומת על ידי המהנדסים שלנו: ה-AI מגביר את הפרודוקטיביות ואת רמת האיכות — אינו מחליף אותן.',
+      steps: [
+        { title: 'מחקר ומסגור', text: 'ניתוח צרכים מוגבר AI: סדנאות, מידול מסלולים, מפרטים.' },
+        { title: 'תכנון', text: 'ארכיטקטורת יישום וענן, בחירות טכנולוגיות המאומתות באב-טיפוס מסייע.' },
+        { title: 'פיתוח', text: 'קוד הנוצר ונסקר בסיוע AI, בקרת איכות אנושית שיטתית.' },
+        { title: 'בדיקות ומסירה', text: 'אסטרטגיית בדיקות אוטומטיות, קבלה, תיעוד ופריסה.' },
+        { title: 'תפעול ופיתוח מתמשך', text: 'הפעלה, ניטור והעברת ידע לצוותים שלכם.' },
+      ],
+      solutionsTitle: 'בניית פתרונות AI',
+      solutionsText:
+        'מעבר לשימוש הפנימי, אנו מעצבים ללקוחותינו פתרונות בינה מלאכותית בהתאמה אישית: סוכנים אוטונומיים המסוגלים לבצע שרשראות משימות, יישומים עסקיים המשלבים מודלי שפה (חיפוש מוגבר, עוזרים שיחתיים, עיבוד מסמכים) וצנרת אוטומציה חכמה. אנו מטפלים בבחירת המודלים, בשילוב עם המערכות שלכם ובהשקה מאובטחת.',
+      aiChips: ['סוכנים אוטונומיים', 'RAG', 'צ׳אטבוטים עסקיים', 'אוטומציה', 'ניתוח מסמכים', 'AI גנרטיבי'],
+      cloudTitle: 'יישומי ענן ותשתיות',
+      cloudA:
+        'אנו מפתחים יישומים ענן-ילידים, עם העדפה לתשתיות המתוארות כקוד באמצעות ',
+      cloudB:
+        ': סביבות הניתנות לשחזור, פריסות מבוקרות ועלויות מותאמות. עם זאת, המומחיות שלנו משתרעת על מגוון הפלטפורמות הנפוצות בשוק — בפרט ',
+      cloudC: ' ו-',
+      cloudD:
+        ' — כדי להתאים לאקוסיסטם הקיים שלכם ולא לכפות את שלנו.',
+      cloudChips: ['AWS CDK', 'AWS', 'Microsoft Azure', 'Google Cloud', 'Kubernetes', 'Terraform'],
+    },
+    about: {
+      title: 'עלינו',
+      lead: 'חברה אסטונית המשרתת פרויקטי IT באירופה ובאמריקה.',
+      whoTitle: 'מי אנחנו',
+      whoP1:
+        ' היא חברת ייעוץ ופיתוח IT הרשומה באסטוניה (OÜ — המקבילה האסטונית לבע"מ). מטאלין אנו משרתים לקוחות באירופה ובאמריקה, בייעוץ ובביצוע כאחד.',
+      whoP2:
+        'פעילותנו מכסה שני תחומים משלימים: ייעוץ וסיוע בהזמנה לבעלי פרויקטים, ופיתוח "מפתח ביד" של יישומי Web, פתרונות בינה מלאכותית ותשתיות ענן.',
+      legalTitle: 'מידע משפטי',
+      legalName: 'שם החברה',
+      legalForm: 'צורה משפטית',
+      legalFormValue: 'Osaühing (OÜ) — חברה בעירבון מוגבל על פי דיני אסטוניה',
+      legalReg: 'מספר רישום',
+      legalAddress: 'כתובת',
+      legalAddressCity: '10114 טאלין, אסטוניה',
+      legalArea: 'כיסוי גאוגרפי',
+      legalAreaValue: 'האיחוד האירופי, בריטניה, צפון ודרום אמריקה',
+      legalContact: 'יצירת קשר',
+      consultingTitle: 'ייעוץ לעסקים',
+      consultingA: 'תחת המותג ',
+      consultingB:
+        ', החברה מלווה מנהלי פרויקטים עסקיים: ניתוח צרכים מסייע בינה מלאכותית, מסגור פונקציונלי וטכני, כתיבת מסמכי אפיון, בחירת ארכיטקטורה ופיקוח על הביצוע. תפקידנו: לאבטח את ההחלטות שלכם ולהכין פיתוח "מפתח ביד", אותו נוכל לבצע בעצמנו.',
+    },
+    footer: {
+      tagline: 'ייעוץ ופיתוח IT — אירופה ואמריקה',
+      credits:
+        'תמונות: "העיר העתיקה של טאלין מפטקולי", איוואר ליידוס (CC BY-SA 3.0 EE) · "מון בלאן מהסלב", Claudec (CC BY-SA 3.0) · "הפרלמנט ההונגרי, בודפשט", Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
+    },
+  },
+  ar: {
+    metaTitle: 'NZY Informatique OÜ — استشارات وتطوير تقنية المعلومات',
+    selectLanguage: 'اختيار اللغة',
+    nav: {
+      home: 'الرئيسية',
+      expertise: 'خبرتنا',
+      about: 'من نحن',
+    },
+    hero: {
+      subtitle:
+        'استشارات وتطوير في تكنولوجيا المعلومات. NZY Informatique OÜ (Ltd.) — شركة أوروبية مقرها إستونيا',
+      cta: 'اكتشف خبرتنا',
+    },
+    home: {
+      introTitle: 'مشاريعكم الطموحة على الويب، مدفوعة بالذكاء الاصطناعي',
+      introP1:
+        'ترافق NZY Informatique OÜ الشركات في أوروبا والأمريكيتين في تصميم وتنفيذ تطبيقات الويب المتقدمة. يقوم نهجنا على تحليل المشاريع المعزَّز بالذكاء الاصطناعي: نستخدم أحدث النماذج لرسم خريطة احتياجاتكم، واختبار سيناريوهات الاستخدام، وكشف مخاطر البنية التقنية، وإنتاج مواصفات بدقة غير مسبوقة — قبل كتابة أول سطر من الشيفرة.',
+      introP2a: 'نتولى ',
+      introP2Strong: 'الدورة الكاملة لمشروعكم',
+      introP2b:
+        ': من الدراسة الأولية والاستشارة لدى مديري المشاريع التجارية، وصولاً إلى التطوير الجاهز للتسليم. التأطير الوظيفي، ومساندة صاحب العمل، والهندسة، والتطوير، والاختبار، والنشر السحابي، ونقل الكفاءات: محاور واحد ورؤية شاملة من البداية إلى النهاية.',
+      consultingTitle: 'دراسة واستشارة',
+      consultingText:
+        'تحليل مشاريعكم التطبيقية بمساعدة الذكاء الاصطناعي، وتأطير وظيفي، ومرافقة فرق صاحب العمل لديكم، من التعبير عن الحاجة إلى ملف المواصفات.',
+      devTitle: 'تطوير جاهز للتسليم',
+      devText:
+        'تصميم وتنفيذ كاملان لتطبيقات ويب حديثة: هندسة، تطوير، اختبار، تسليم وتشغيل — جاهزة للاستخدام.',
+      cloudTitle: 'حلول الذكاء الاصطناعي والسحابة',
+      cloudText:
+        'وكلاء أذكياء، وتطبيقات تدمج الذكاء الاصطناعي، وبنى سحابية موصوفة كشيفرة، منشورة على المنصة الأنسب لسياقكم.',
+      contactTitle: 'لنتحدث عن مشروعكم',
+      contactText: 'فكرة؟ دفتر شروط؟ تطبيق يحتاج إلى تحديث؟ راسلونا.',
+    },
+    expertise: {
+      title: 'خبرتنا',
+      lead: 'هندسة برمجيات حديثة يتدخل فيها الذكاء الاصطناعي في كل مرحلة — وهو أيضاً موضوع ما نصنعه.',
+      aiPanelTitle: 'الذكاء الاصطناعي في كامل دورة التطوير لدينا',
+      aiPanelText:
+        'الذكاء الاصطناعي ليس لدينا موضة عابرة: إنه أداة هندسية مدمجة في كامل سلسلة الإنتاج لدينا. فهو يسرّع تحليل الاحتياجات، ويساعد على استكشاف البنى الممكنة، ويشارك في توليد الشيفرة ومراجعتها، ويعزز تغطية الاختبارات، ويسهّل كتابة التوثيق. ويبقى كل ناتج معتمداً من مهندسينا: الذكاء الاصطناعي يرفع إنتاجيتنا ومعايير الجودة لدينا دون أن يحل محلها.',
+      steps: [
+        { title: 'الدراسة والتأطير', text: 'تحليل احتياجات معزَّز بالذكاء الاصطناعي: ورشات عمل، نمذجة المسارات، مواصفات.' },
+        { title: 'التصميم', text: 'بنية التطبيق والسحابة، وخيارات تقنية مُصادق عليها عبر النمذجة الأولية المدعومة.' },
+        { title: 'التطوير', text: 'شيفرة مولّدة ومُراجعة بدعم الذكاء الاصطناعي، مع رقابة جودة بشرية منتظمة.' },
+        { title: 'الاختبار والتسليم', text: 'استراتيجية اختبارات آلية، وقبول، وتوثيق، ونشر.' },
+        { title: 'التشغيل والتطوير', text: 'تشغيل، وقابلية ملاحظة، ونقل الكفاءات إلى فرقكم.' },
+      ],
+      solutionsTitle: 'إنشاء حلول الذكاء الاصطناعي',
+      solutionsText:
+        'إلى جانب استخدامنا الداخلي له، نصمم لعملائنا حلول ذكاء اصطناعي مخصصة: وكلاء مستقلون قادرون على تنفيذ سلاسل مهام، وتطبيقات أعمال تدمج نماذج اللغة (بحث معزَّز، ومساعدون محاورون، ومعالجة المستندات)، وخطوط أتمتة ذكية. نتولى اختيار النماذج، ودمجها في أنظمتكم، والتشغيل الآمن.',
+      aiChips: ['وكلاء مستقلون', 'RAG', 'روبوتات محادثة للأعمال', 'أتمتة', 'تحليل المستندات', 'ذكاء اصطناعي توليدي'],
+      cloudTitle: 'التطبيقات السحابية والبنية التحتية',
+      cloudA:
+        'نطوّر تطبيقات سحابية أصيلة، مع تفضيل البنى التحتية الموصوفة كشيفرة عبر ',
+      cloudB:
+        ': بيئات قابلة لإعادة الإنتاج، وعمليات نشر مضبوطة، وتكاليف محسّنة. غير أن خبرتنا تمتد إلى طيف واسع من المنصات المستخدمة في السوق — ولا سيما ',
+      cloudC: ' و',
+      cloudD:
+        ' — لكي نتكيف مع منظومتكم القائمة بدلاً من فرض منظومتنا.',
+      cloudChips: ['AWS CDK', 'AWS', 'Microsoft Azure', 'Google Cloud', 'Kubernetes', 'Terraform'],
+    },
+    about: {
+      title: 'من نحن',
+      lead: 'شركة إستونية تخدم مشاريع تقنية المعلومات في أوروبا والأمريكيتين.',
+      whoTitle: 'من نحن',
+      whoP1:
+        ' شركة استشارات وتطوير تقنية معلومات مسجلة في إستونيا (OÜ — المعادل الإستوني لصيغة Ltd.). انطلاقاً من تالين نخدم عملاء في أوروبا والأمريكيتين، في الاستشارة والتنفيذ على حد سواء.',
+      whoP2:
+        'تغطي أنشطتنا مجالين متكاملين: الاستشارة ومساندة صاحب العمل لدى مالكي المشاريع، والتطوير الجاهز للتسليم لتطبيقات الويب وحلول الذكاء الاصطناعي والبنى السحابية.',
+      legalTitle: 'معلومات قانونية',
+      legalName: 'التسمية',
+      legalForm: 'الشكل القانوني',
+      legalFormValue: 'Osaühing (OÜ) — شركة ذات مسؤولية محدودة بموجب القانون الإستوني',
+      legalReg: 'رقم التسجيل',
+      legalAddress: 'العنوان',
+      legalAddressCity: '10114 تالين، إستونيا',
+      legalArea: 'التغطية الجغرافية',
+      legalAreaValue: 'الاتحاد الأوروبي، المملكة المتحدة، أمريكا الشمالية والجنوبية',
+      legalContact: 'الاتصال',
+      consultingTitle: 'استشارات للشركات',
+      consultingA: 'تحت علامتها ',
+      consultingB:
+        '، ترافق الشركة مديري المشاريع التجارية: تحليل احتياجات بمساعدة الذكاء الاصطناعي، وتأطير وظيفي وتقني، وصياغة دفاتر الشروط، واختيار البنية، ومتابعة التنفيذ. دورنا: تأمين قراراتكم وإعداد تطوير جاهز للتسليم يمكننا بعد ذلك تنفيذه بأنفسنا.',
+    },
+    footer: {
+      tagline: 'استشارات وتطوير تقنية المعلومات — أوروبا والأمريكيتان',
+      credits:
+        'الصور: «البلدة القديمة في تالين من منصة باتكولي» لإيفار ليدوس (CC BY-SA 3.0 EE) · «مون بلان من ساليف» لـ Claudec (CC BY-SA 3.0) · «البرلمان الهنغاري، بودابست» لـ Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
+    },
+  },
+  zh: {
+    metaTitle: 'NZY Informatique OÜ — IT 咨询与开发',
+    selectLanguage: '选择语言',
+    nav: {
+      home: '首页',
+      expertise: '我们的专长',
+      about: '关于我们',
+    },
+    hero: {
+      subtitle:
+        'IT 咨询与软件开发。NZY Informatique OÜ（Ltd.）— 总部位于爱沙尼亚的欧洲公司',
+      cta: '了解我们的专长',
+    },
+    home: {
+      introTitle: '您的宏大 Web 项目，由人工智能驱动',
+      introP1:
+        'NZY Informatique OÜ 为欧洲和美洲的企业提供先进 Web 应用的设计与交付服务。我们的方法以人工智能增强的项目分析为基础：借助最新模型梳理您的需求、检验使用场景、识别架构风险，并在编写第一行代码之前产出前所未有的精确规格说明。',
+      introP2a: '我们负责您项目的',
+      introP2Strong: '完整生命周期',
+      introP2b:
+        '：从前期调研和面向业务项目经理的咨询，到解决方案的交钥匙开发。功能界定、甲方协助、架构设计、开发、测试、云端部署与技能转移：单一联系人，端到端视野。',
+      consultingTitle: '调研与咨询',
+      consultingText:
+        '以人工智能辅助分析您的应用项目、进行功能界定，并陪伴您的甲方团队——从需求表达到规格说明文档。',
+      devTitle: '交钥匙开发',
+      devText:
+        '现代 Web 应用的完整设计与实现：架构、开发、测试、交付与上线——开箱即用。',
+      cloudTitle: 'AI 与云解决方案',
+      cloudText:
+        '智能体、集成 AI 的应用以及基础设施即代码的云平台，部署在最契合您环境的平台上。',
+      contactTitle: '谈谈您的项目',
+      contactText: '有想法、需求文档，或是需要现代化的应用？请给我们写信。',
+    },
+    expertise: {
+      title: '我们的专长',
+      lead: '现代软件工程：人工智能贯穿每个环节——它同时也是我们交付成果的本身。',
+      aiPanelTitle: 'AI 贯穿我们的整个开发周期',
+      aiPanelText:
+        '对我们而言，人工智能不是一时风尚，而是融入整条生产链的工程工具。它加速需求分析、帮助探索候选架构、参与代码生成与评审、增强测试覆盖度并简化文档编写。每个交付物仍由我们的工程师验证：AI 提升我们的效率与质量标准，而不是取而代之。',
+      steps: [
+        { title: '调研与界定', text: 'AI 增强的需求分析：研讨会、流程建模、规格说明。' },
+        { title: '设计', text: '应用与云架构，经辅助原型验证的技术选型。' },
+        { title: '开发', text: '在 AI 辅助下生成并评审的代码，系统化的人工质量把关。' },
+        { title: '测试与交付', text: '自动化测试策略、验收、文档与部署。' },
+        { title: '运行与演进', text: '运维、可观测性，以及向您团队的技能转移。' },
+      ],
+      solutionsTitle: '打造 AI 解决方案',
+      solutionsText:
+        '除内部使用外，我们还为客户定制人工智能解决方案：能够执行任务链的自主智能体、集成语言模型的业务应用（增强搜索、对话助手、文档处理），以及智能自动化流水线。我们负责模型选型、与您系统的集成以及安全上线。',
+      aiChips: ['自主智能体', 'RAG', '业务聊天机器人', '自动化', '文档分析', '生成式 AI'],
+      cloudTitle: '云应用与基础设施',
+      cloudA: '我们开发云原生应用，优先采用通过 ',
+      cloudB:
+        ' 以代码描述的基础设施：可复现的环境、可控的部署与优化的成本。同时，我们的技术能力覆盖市场上广泛使用的各类平台——尤其包括 ',
+      cloudC: ' 和 ',
+      cloudD: '——以适应您现有的技术生态，而不是强加我们的选择。',
+      cloudChips: ['AWS CDK', 'AWS', 'Microsoft Azure', 'Google Cloud', 'Kubernetes', 'Terraform'],
+    },
+    about: {
+      title: '关于我们',
+      lead: '一家服务欧洲与美洲 IT 项目的爱沙尼亚公司。',
+      whoTitle: '我们是谁',
+      whoP1:
+        ' 是一家在爱沙尼亚注册的 IT 咨询与开发公司（OÜ，相当于爱沙尼亚的 Ltd. 公司形式）。我们以塔林为基地，为欧洲和美洲的客户提供咨询与交付服务。',
+      whoP2:
+        '我们的业务涵盖两个相辅相成的领域：面向项目业主的咨询与甲方支持，以及 Web 应用、人工智能解决方案和云基础设施的交钥匙开发。',
+      legalTitle: '法律信息',
+      legalName: '公司名称',
+      legalForm: '法律形式',
+      legalFormValue: 'Osaühing (OÜ) — 爱沙尼亚有限责任公司',
+      legalReg: '注册号',
+      legalAddress: '地址',
+      legalAddressCity: '10114 塔林，爱沙尼亚',
+      legalArea: '地理覆盖范围',
+      legalAreaValue: '欧盟、英国、北美和南美',
+      legalContact: '联系方式',
+      consultingTitle: '企业咨询',
+      consultingA: '公司以其 ',
+      consultingB:
+        ' 品牌为业务项目经理提供支持：人工智能辅助的需求分析、功能与技术界定、需求文档编写、架构选型及实施监督。我们的职责：保障您的决策稳妥，并为交钥匙开发做好准备——开发工作随后也可由我们亲自完成。',
+    },
+    footer: {
+      tagline: 'IT 咨询与开发 — 欧洲与美洲',
+      credits:
+        '照片：Ivar Leidus《从 Patkuli 观景台看塔林老城》(CC BY-SA 3.0 EE) · Claudec《萨莱夫远眺勃朗峰》(CC BY-SA 3.0) · Godot13《匈牙利国会大厦，布达佩斯》(CC BY-SA 4.0) — Wikimedia Commons',
     },
   },
 }

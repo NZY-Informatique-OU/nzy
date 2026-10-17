@@ -19,6 +19,7 @@ function fromNavigator(): Lang | undefined {
     const primary = tag.toLowerCase().split('-')[0]
     if (isLang(primary)) return primary
     if (primary === 'be') return 'ru'
+    if (primary === 'iw') return 'he'
   }
   return undefined
 }
@@ -49,7 +50,7 @@ export interface LanguageContextValue {
 
 export const LanguageContext = createContext<LanguageContextValue>({
   lang: FALLBACK,
-  setLang: () => {},
+  setLang: () => { },
   t: messages[FALLBACK],
 })
 

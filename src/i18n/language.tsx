@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
 import { detectLang, persistLang, LanguageContext } from './language-context'
-import { messages } from './messages'
+import { isRtl, messages } from './messages'
 import type { Lang } from './messages'
 
 export function LanguageProvider({
@@ -22,6 +22,7 @@ export function LanguageProvider({
 
   useEffect(() => {
     document.documentElement.lang = lang
+    document.documentElement.dir = isRtl(lang) ? 'rtl' : 'ltr'
     document.title = t.metaTitle
   }, [lang, t.metaTitle])
 

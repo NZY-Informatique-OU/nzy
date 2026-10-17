@@ -58,7 +58,7 @@ body {
 }
 
 .site-menubar .p-menubar-root-list {
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .site-menubar .p-menuitem-link {
@@ -311,7 +311,7 @@ body {
 /* ---------- Expertise ---------- */
 .section-icon {
   color: var(--nzy-cyan);
-  margin-right: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 .chip-row {
@@ -344,7 +344,7 @@ body {
 .cycle-step:not(:last-child)::before {
   content: '';
   position: absolute;
-  left: 1.05rem;
+  inset-inline-start: 1.05rem;
   top: 2.4rem;
   bottom: 0.3rem;
   width: 2px;
