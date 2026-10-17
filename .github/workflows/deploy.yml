@@ -39,8 +39,8 @@ jobs:
         run: npm run build
         env:
           # Project page (https://<user>.github.io/<repo>/): base = /<repo>/
-          # User/org site (<org>.github.io repo) or custom domain: base = /
-          # Override anytime with the VITE_BASE_PATH repository variable
+          # Custom domain (CNAME file in public/, e.g. www.nzy.info): base = /
+          #   -> set the VITE_BASE_PATH repository variable to / once DNS is live
           VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || (endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name)) }}
 
       - name: SPA fallback for client-side routes

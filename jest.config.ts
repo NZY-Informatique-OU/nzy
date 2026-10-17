@@ -15,7 +15,8 @@ export default {
     },
     moduleNameMapper: {
         "^@/(.*)$": "<rootDir>/src/$1",
-        "\\.(css|less)$": "<rootDir>/assets/css/__mocks__/styleMock.js"
+        "\\.(css|less)$": "<rootDir>/assets/css/__mocks__/styleMock.js",
+        "\\.(png|jpe?g|gif|svg|webp)$": "<rootDir>/assets/css/__mocks__/fileMock.js"
     },
     verbose: true,
     collectCoverage: true,

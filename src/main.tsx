@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
 import { PrimeReactProvider } from 'primereact/api'
+import { LanguageProvider } from './i18n/language'
 
 const basepath = import.meta.env.BASE_URL.replace(/\/$/, '')
 
@@ -20,6 +21,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <PrimeReactProvider value={{
     ripple: true
   }}>
-    <RouterProvider router={router} />
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
   </PrimeReactProvider>
 )
