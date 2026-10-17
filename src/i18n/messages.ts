@@ -1,4 +1,4 @@
-export const languages = ['fr', 'en', 'et', 'es', 'pt', 'uk', 'ru'] as const
+export const languages = ['fr', 'en', 'et', 'es', 'pt', 'uk', 'ru', 'hu'] as const
 export type Lang = (typeof languages)[number]
 
 export const langNames: Record<Lang, string> = {
@@ -9,6 +9,7 @@ export const langNames: Record<Lang, string> = {
   pt: 'Português',
   uk: 'Українська',
   ru: 'Русский',
+  hu: 'Magyar',
 }
 
 const fr = {
@@ -636,6 +637,95 @@ export const messages: Record<Lang, Messages> = {
       tagline: 'ИТ-консалтинг и разработка — Европа',
       credits:
         'Фото: «Старый город Таллинна с площадки Паткули», Ивар Лейдус (CC BY-SA 3.0 EE) · «Монблан с Салева», Claudec (CC BY-SA 3.0) · «Венгерский парламент, Будапешт», Godot13 (CC BY-SA 4.0) — Wikimedia Commons',
+    },
+  },
+  hu: {
+    metaTitle: 'NZY Informatique OÜ — IT-tanácsadás és -fejlesztés',
+    selectLanguage: 'Nyelv választása',
+    nav: {
+      home: 'Kezdőlap',
+      expertise: 'Szakértelmünk',
+      about: 'Rólunk',
+    },
+    hero: {
+      subtitle:
+        'IT-tanácsadás és -fejlesztés. NZY Informatique OÜ (Kft.) — Észtországban székhellyel rendelkező európai vállalat',
+      cta: 'Ismerje meg szakértelmünket',
+    },
+    home: {
+      introTitle: 'Ambiciózus webes projektjei, mesterséges intelligenciával vezérelve',
+      introP1:
+        'A NZY Informatique OÜ európai vállalatokat támogat a fejlett webalkalmazások megtervezésében és megvalósításában. Megközelítésünk a mesterséges intelligenciával kibővített projektelemzésen alapul: a legújabb modelleket használjuk az Ön igényeinek feltérképezésére, a felhasználási forgatókönyvek megvizsgálására, az architektúra-kockázatok azonosítására és példátlan pontosságú specifikációk készítésére — még az első kódsor megírása előtt.',
+      introP2a: 'Vállaljuk ',
+      introP2Strong: 'projektje teljes életciklusát',
+      introP2b:
+        ': a kezdeti tanulmányozástól és az üzleti projektmenedzserek tanácsadásától a megoldás kulcsrakész fejlesztéséig. Funkcionális keretezés, megrendelői oldali támogatás, architektúra, fejlesztés, tesztelés, felhős telepítés és kompetencia-átadás: egyetlen kapcsolattartó, végponttól végpontig terjedő rálátás.',
+      consultingTitle: 'Tanulmány és tanácsadás',
+      consultingText:
+        'Alkalmazásprojektjeinek MI által támogatott elemzése, funkcionális keretezés és megrendelői csapatainak kísérése, az igény megfogalmazásától a specifikációs dokumentumig.',
+      devTitle: 'Kulcsrakész fejlesztés',
+      devText:
+        'Modern webalkalmazások teljes körű megtervezése és megvalósítása: architektúra, fejlesztés, tesztelés, átadás és élesítés — azonnal használatba vehetően.',
+      cloudTitle: 'MI- és felhőmegoldások',
+      cloudText:
+        'Intelligens ügynökök, MI-t integráló alkalmazások és infrastruktúra-mint-kód felhőmegoldások, az Ön környezetéhez leginkább illő platformon telepítve.',
+      contactTitle: 'Beszéljünk a projektjéről',
+      contactText: 'Van egy ötlete, egy specifikációja, egy modernizálandó alkalmazása? Írjon nekünk.',
+    },
+    expertise: {
+      title: 'Szakértelmünk',
+      lead: 'Modern szoftverfejlesztés, ahol a mesterséges intelligencia minden szakaszban szerepet játszik — és maga is megvalósításaink tárgya.',
+      aiPanelTitle: 'MI a teljes fejlesztési ciklusunkban',
+      aiPanelText:
+        'A mesterséges intelligencia számunkra nem múló divat: mérnöki eszköz, amely beépül teljes termelési láncunkba. Felgyorsítja az igényelemzést, segít feltárni a lehetséges architektúrákat, részt vesz a kódgenerálásban és -felülvizsgálatban, erősíti a tesztlefedettséget és gördülékenyebbé teszi a dokumentáció készítését. Minden eredményt továbbra is mérnökeink hitelesítenek: az MI növeli termelékenységünket és minőségi elvárásainkat, nem helyettesíti azokat.',
+      steps: [
+        { title: 'Tanulmány és keretezés', text: 'MI-vel kibővített igényelemzés: műhelymunkák, folyamatmodellezés, specifikációk.' },
+        { title: 'Tervezés', text: 'Alkalmazás- és felhőarchitektúra, támogatott prototípus-készítéssel validált technológiai döntések.' },
+        { title: 'Fejlesztés', text: 'MI támogatásával generált és felülvizsgált kód, szisztematikus emberi minőségellenőrzés.' },
+        { title: 'Tesztelés és átadás', text: 'Automatizált tesztelési stratégia, átvétel, dokumentáció és telepítés.' },
+        { title: 'Üzemeltetés és továbbfejlesztés', text: 'Üzemeltetés, megfigyelhetőség és kompetencia-átadás az Ön csapatainak.' },
+      ],
+      solutionsTitle: 'MI-megoldások készítése',
+      solutionsText:
+        'A belső felhasználáson túl egyedi mesterségesintelligencia-megoldásokat tervezünk ügyfeleink számára: feladatláncok végrehajtására képes autonóm ügynökök, nyelvi modelleket integráló üzleti alkalmazások (kibővített keresés, beszélgető asszisztensek, dokumentumfeldolgozás) és intelligens automatizálási csővezetékek. Átvállaljuk a modellek kiválasztását, a meglévő rendszerekkel való integrációt és a biztonságos élesítést.',
+      aiChips: ['Autonóm ügynökök', 'RAG', 'Üzleti chatbotok', 'Automatizálás', 'Dokumentumelemzés', 'Generatív MI'],
+      cloudTitle: 'Felhőalkalmazások és infrastruktúra',
+      cloudA:
+        'Felhőnatív alkalmazásokat fejlesztünk, előnyben részesítve a kódként leírt infrastruktúrákat az ',
+      cloudB:
+        ' segítségével: reprodukálható környezetek, ellenőrzött telepítések és optimalizált költségek. Szaktudásunk azonban kiterjed a piacon használt platformok széles skálájára — különösen a ',
+      cloudC: ' és a ',
+      cloudD:
+        ' rendszerekre —, hogy az Ön meglévő ökoszisztémájához alkalmazkodjunk, ahelyett hogy a miénket kényszerítenénk rá.',
+      cloudChips: ['AWS CDK', 'AWS', 'Microsoft Azure', 'Google Cloud', 'Kubernetes', 'Terraform'],
+    },
+    about: {
+      title: 'Rólunk',
+      lead: 'Egy észt vállalat, amely informatikai projekteket szolgál ki egész Európában.',
+      whoTitle: 'Kik vagyunk',
+      whoP1:
+        ' egy Észtországban bejegyzett IT-tanácsadó és -fejlesztő vállalat (OÜ — a Kft. észt megfelelője). Tallinnból egész Európában szolgálunk ki ügyfeleket, tanácsadásban és megvalósításban egyaránt.',
+      whoP2:
+        'Tevékenységünk két kiegészítő területet ölel fel: tanácsadást és megrendelői oldali támogatást a projekttulajdonosok számára, valamint webalkalmazások, mesterségesintelligencia-megoldások és felhőinfrastruktúrák kulcsrakész fejlesztését.',
+      legalTitle: 'Jogi információk',
+      legalName: 'Cégnév',
+      legalForm: 'Jogi forma',
+      legalFormValue: 'Osaühing (OÜ) — észt jogi korlátolt felelősségű társaság',
+      legalReg: 'Nyilvántartási szám',
+      legalAddress: 'Cím',
+      legalAddressCity: '10114 Tallinn, Észtország',
+      legalArea: 'Működési terület',
+      legalAreaValue: 'Egész Európa',
+      legalContact: 'Kapcsolat',
+      consultingTitle: 'Vállalati tanácsadás',
+      consultingA: 'A ',
+      consultingB:
+        ' márkanév alatt a vállalat az üzleti projektmenedzsereket támogatja: mesterséges intelligenciával támogatott igényelemzés, funkcionális és technikai keretezés, műszaki specifikációk készítése, architektúra-választás és a megvalósítás felügyelete. Szerepünk: biztosítani döntései megalapozottságát és előkészíteni a kulcsrakész fejlesztést, amelyet ezután mi magunk is elvégezhetünk.',
+    },
+    footer: {
+      tagline: 'IT-tanácsadás és -fejlesztés — Európa',
+      credits:
+        'Fotók: Ivar Leidus „Tallinni óváros a Patkuli kilátóból” (CC BY-SA 3.0 EE) · Claudec „Mont Blanc a Salève-ről” (CC BY-SA 3.0) · Godot13 „Magyar parlament, Budapest” (CC BY-SA 4.0) — Wikimedia Commons',
     },
   },
 }
